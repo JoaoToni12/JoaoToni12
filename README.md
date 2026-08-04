@@ -9,7 +9,8 @@ Based in Rennes, France · Open to remote AI Engineering and AI Deployment roles
 
 [LinkedIn](https://www.linkedin.com/in/joao-toni) ·
 [Email](mailto:joaotoni2@gmail.com) ·
-[Featured project](https://github.com/JoaoToni12/verifiable-agent-runtime)
+[Verifiable Agent Runtime](https://github.com/JoaoToni12/verifiable-agent-runtime) ·
+[Claude Code Guardrails](https://github.com/JoaoToni12/ALL-ABT-CLAUDE)
 
 ## What I work on
 
@@ -30,7 +31,7 @@ business rules are published here.
 
 | Evidence | Scope |
 |---|---|
-| Repository ownership | Primary contributor across **18 private repositories** and roughly **760 commits** |
+| Repository contribution | Primary contributor across **18 private repositories** and roughly **760 commits** |
 | Workflow engineering | Created most of approximately **148 production-orchestrator workflows** across **7 workspaces**; maintained or governed roughly half |
 | LLM evaluation | Built a **1,000-question** graded set, including **950 expected-source labels** for citation-correctness evaluation |
 | Agentic reporting | Developed a **63-node** weekly pipeline with **16 prompt-specialized analysts** and a synthesis stage |
@@ -48,19 +49,20 @@ shadow and kill-switch modes, and a hash-chained audit ledger. The repository
 includes strict typing, tests, CI, Docker Compose, Kubernetes manifests, a threat
 model, and an ADR.
 
+### [ALL-ABT-CLAUDE — Claude Code Guardrails](https://github.com/JoaoToni12/ALL-ABT-CLAUDE)
+
+[![CI](https://github.com/JoaoToni12/ALL-ABT-CLAUDE/actions/workflows/ci.yml/badge.svg)](https://github.com/JoaoToni12/ALL-ABT-CLAUDE/actions/workflows/ci.yml)
+
+Deterministic `PreToolUse` and `PostToolUse` hooks that classify shell and write
+actions as allow, ask, or deny; fail closed on malformed input; block path and
+symlink escapes; and validate JSON after edits without echoing file contents.
+The clean-room toolkit has **46 dependency-free tests**, CI on Node.js 22 and
+24, a threat model, versioned policy, and shell-free settings generation.
+
 ## Stack
 
-`Python` · `SQL` · `FastAPI` · `n8n` · `Snowflake` · `REST APIs` · `Docker` ·
-`Kubernetes` · `ArgoCD` · `CI/CD` · `Git` · `Linux`
-
-## Next clean-room builds
-
-- **rag-or-not:** compare cached long-context and retrieval using the same public
-  corpus and evaluation harness across quality, citation correctness, latency,
-  and cost.
-- **silent-failure-detector:** distinguish a failed job from one that silently
-  did not run or ran with anomalous volume, using synthetic events and an
-  independent dead-man's-switch.
+`Python` · `SQL` · `FastAPI` · `Claude Code` · `n8n` · `Snowflake` ·
+`REST APIs` · `Docker` · `Kubernetes` · `ArgoCD` · `CI/CD` · `Git` · `Linux`
 
 ## Education
 
