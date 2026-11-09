@@ -18,7 +18,7 @@ authority: payload-bound approvals, request-bound idempotency, deterministic ris
 policies, shadow and kill-switch modes, and a hash-chained audit ledger. Tests,
 CI, threat model, ADR.
 
-**[Claude Code guardrails](https://github.com/JoaoToni12/ALL-ABT-CLAUDE)** ·
+**[Claude Code guardrails](https://github.com/JoaoToni12/claude-code-guardrails)** ·
 Node.js. Deterministic `PreToolUse` and `PostToolUse` hooks that classify shell
 and write actions as allow, ask or deny, fail closed on malformed input and block
 path escapes. 46 dependency-free tests, CI on Node.js 22 and 24.
