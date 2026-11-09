@@ -1,75 +1,54 @@
 # João Gabriel Toni
 
-### Applied AI & Automation Engineer · AI Deployment · Evaluated and observable LLM systems
+Applied AI engineer. I build LLM systems you can check: evaluation sets that
+catch silent failures, guardrails that fail closed, and audit trails a third
+party can read.
 
-I build AI and automation systems that survive contact with production:
-source-grounded, evaluated, monitored, and accountable.
+ITA × CentraleSupélec · [joaotoni12.github.io](https://joaotoni12.github.io) ·
+[LinkedIn](https://www.linkedin.com/in/joao-toni) · joaotoni2@gmail.com
 
-Based in Rennes, France · Open to remote AI Engineering and AI Deployment roles
-
-[LinkedIn](https://www.linkedin.com/in/joao-toni) ·
-[Email](mailto:joaotoni2@gmail.com) ·
-[Verifiable Agent Runtime](https://github.com/JoaoToni12/verifiable-agent-runtime) ·
-[Claude Code Guardrails](https://github.com/JoaoToni12/ALL-ABT-CLAUDE)
-
-## What I work on
-
-- **Production AI systems:** source-grounded assistants, constrained tool use,
-  prompt caching, cost-aware model routing, and human approval gates.
-- **Evaluation:** citation-correctness scoring, adversarial and out-of-corpus
-  cases, multi-turn behavior, and prompt-injection tests.
-- **Reliability:** monitoring for explicit failures, silent non-execution, data
-  anomalies, PII-safe alerts, and health checks outside the primary orchestrator.
-- **AI automation at scale:** version-controlled delivery, schema validation,
-  deployment controls, graceful degradation, and operational ownership.
-
-## Current production scope
-
-My employer repositories remain private. The numbers below describe my verified
-scope at **NG.CASH**; no company source code, data, prompts, workflows, or
-business rules are published here.
-
-| Evidence | Scope |
-|---|---|
-| Repository contribution | Primary contributor across **18 private repositories** and roughly **760 commits** |
-| Workflow engineering | Created most of approximately **148 production-orchestrator workflows** across **7 workspaces**; maintained or governed roughly half |
-| LLM evaluation | Built a **1,000-question** graded set, including **950 expected-source labels** for citation-correctness evaluation |
-| Agentic reporting | Developed a **63-node** weekly pipeline with **16 prompt-specialized analysts** and a synthesis stage |
-| Operational outcomes | Replaced reporting and curation processes measured at approximately **15 hours/month** and **2–3 hours/week** respectively |
+Open to a 2027 engineering internship in Applied AI, Forward-Deployed or LLMOps
+roles, from 26 April (about 21 weeks).
 
 ## Public work
 
-### [Verifiable Agent Runtime](https://github.com/JoaoToni12/verifiable-agent-runtime)
+**[Verifiable Agent Runtime](https://github.com/JoaoToni12/verifiable-agent-runtime)** ·
+Python, FastAPI. Lets AI agents propose actions without silently acquiring
+authority: payload-bound approvals, request-bound idempotency, deterministic risk
+policies, shadow and kill-switch modes, and a hash-chained audit ledger. Tests,
+CI, threat model, ADR.
 
-[![CI](https://github.com/JoaoToni12/verifiable-agent-runtime/actions/workflows/ci.yml/badge.svg)](https://github.com/JoaoToni12/verifiable-agent-runtime/actions/workflows/ci.yml)
+**[Claude Code guardrails](https://github.com/JoaoToni12/claude-code-guardrails)** ·
+Node.js. Deterministic `PreToolUse` and `PostToolUse` hooks that classify shell
+and write actions as allow, ask or deny, fail closed on malformed input and block
+path escapes. 46 dependency-free tests, CI on Node.js 22 and 24.
 
-A clean-room FastAPI control plane for policy-gated AI actions. It demonstrates
-payload-bound approvals, request-bound idempotency, deterministic risk policies,
-shadow and kill-switch modes, and a hash-chained audit ledger. The repository
-includes strict typing, tests, CI, Docker Compose, Kubernetes manifests, a threat
-model, and an ADR.
+**Mapa de Falhas** · in review, public in January 2027. An open failure map for
+Portuguese-language support assistants: 260 cases in 12 failure types (synthetic
+personal-data leaks, prompt injection written in Portuguese, LGPD requests,
+invented answers, long-conversation drift), a fictional company's knowledge base
+with deliberate traps, and a reference RAG app in five configurations.
 
-### [ALL-ABT-CLAUDE — Claude Code Guardrails](https://github.com/JoaoToni12/ALL-ABT-CLAUDE)
+## In production
 
-[![CI](https://github.com/JoaoToni12/ALL-ABT-CLAUDE/actions/workflows/ci.yml/badge.svg)](https://github.com/JoaoToni12/ALL-ABT-CLAUDE/actions/workflows/ci.yml)
+My employer repositories are private. These are scope counts at **NG.CASH**; no
+company code, data, prompts, workflows or business rules are published here.
 
-Deterministic `PreToolUse` and `PostToolUse` hooks that classify shell and write
-actions as allow, ask, or deny; fail closed on malformed input; block path and
-symlink escapes; and validate JSON after edits without echoing file contents.
-The clean-room toolkit has **46 dependency-free tests**, CI on Node.js 22 and
-24, a threat model, versioned policy, and shell-free settings generation.
-
-## Stack
-
-`Python` · `SQL` · `FastAPI` · `Claude Code` · `n8n` · `Snowflake` ·
-`REST APIs` · `Docker` · `Kubernetes` · `ArgoCD` · `CI/CD` · `Git` · `Linux`
+| Evidence | Scope |
+|---|---|
+| Repository contribution | Primary contributor across **18 private repositories**, roughly **760 commits** |
+| Workflow engineering | Created most of approximately **148 production-orchestrator workflows** across **7 workspaces**; maintained or governed roughly half |
+| LLM evaluation | A **1,000-question** graded set, **950** with expected-source labels for citation-correctness checks |
+| Agentic reporting | A **63-node** weekly pipeline with **16 prompt-specialized analysts** and a synthesis stage |
+| Operational outcomes | Replaced reporting and curation processes measured at about **15 hours/month** and **2–3 hours/week** |
 
 ## Education
 
-- **CentraleSupélec** — incoming double-degree Engineering Curriculum,
-  Electronics, 2026–2028.
-- **Instituto Tecnológico de Aeronáutica (ITA)** — Electronics Engineering,
-  expected 2028; GPA 8.63/10, ranked 3rd of 20.
+- **CentraleSupélec**, double-degree Engineering Curriculum, Electronics, 2026–2028.
+- **ITA**, Electronics Engineering, expected 2028. GPA 8.63/10, ranked 3rd of 20.
 
-> Public repositories are independent clean-room work built with synthetic data
-> and public interfaces. Employer systems and implementation details stay private.
+`Python` · `SQL` · `FastAPI` · `Claude Code` · `n8n` · `Snowflake` · `Docker` ·
+`Kubernetes` · `ArgoCD` · `CI/CD`
+
+Public repositories are clean-room work built with synthetic data and public
+interfaces.
