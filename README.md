@@ -45,7 +45,7 @@ company code, data, prompts, workflows or business rules are published here.
 ## Education
 
 - **CentraleSupélec**, double-degree Engineering Curriculum, Electronics, 2026–2028.
-- **ITA**, Electronics Engineering, expected 2028. GPA 8.63/10, ranked 3rd of 20.
+- **ITA**, Electronics Engineering, expected 2028. GPA 8.66/10, ranked 3rd of 20.
 
 `Python` · `SQL` · `FastAPI` · `Claude Code` · `n8n` · `Snowflake` · `Docker` ·
 `Kubernetes` · `ArgoCD` · `CI/CD`
